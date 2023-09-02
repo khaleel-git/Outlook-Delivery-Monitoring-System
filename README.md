@@ -1,5 +1,7 @@
 # Delivery Monitoring with EricMon
 
+![Delivery Monitoring](delivery_monitoring.png)
+
 ## Overview
 
 This Python script, `delivery_check.py`, is designed for monitoring daily deliveries through the Outlook Sent Items folder. It retrieves delivery information from an EricMon database and matches it with emails in the Sent Items folder to track the status of deliveries. The script generates an HTML report and sends it via email to relevant stakeholders.
