@@ -41,6 +41,28 @@ Before using this script, ensure you have the following prerequisites:
 ```
 pip install -r requirements.txt
 ```
+## Create a table (also Add your desried entries)
+```
+USE [EricMon]
+GO
+
+/****** Object:  Table [dbo].[Meta_Delivery]    Script Date: 9/2/2023 5:00:47 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Meta_Delivery](
+	[Server] [varchar](3) NULL,
+	[Project_Name] [nvarchar](max) NULL,
+	[Email_Subject] [nvarchar](max) NULL,
+	[Expected_Delivery_Time_24_Format] [char](5) NULL,
+	[Description] [nvarchar](max) NULL,
+	[Owner] [varchar](20) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+```
 ## Run the script:
 ```
 python delivery_check.py
