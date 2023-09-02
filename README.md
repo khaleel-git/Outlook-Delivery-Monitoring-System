@@ -35,8 +35,8 @@ To get started with the **Outlook Delivery Monitoring System**, follow these ste
 
 2. Install the required dependencies using the following command:
 
-```bash
-   pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 ## Run the project with:
