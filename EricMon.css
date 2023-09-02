@@ -1,0 +1,70 @@
+body {
+	font-family: Arial, sans-serif;
+  }
+  
+  table {
+	/* width: 0%; */
+	width: auto;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	table-layout: fixed;
+  }
+  
+  th, td {
+	border: 1px solid #080505;
+	text-align: left;
+	padding: 3px;
+  }
+  
+  th {
+	background-color: rgb(255, 224, 47); /* Updated color */
+  }
+  
+  th h1,
+  th h2,
+  th h3,
+  th h4 {
+	margin: 0;
+	padding: 2px !important;
+  }
+  
+  .failure {
+	color: red;
+	font-weight: bold;
+  }
+  
+  .success {
+	color: green;
+	font-weight: bold;
+	background-color: #DFF0D8; /* Add your desired background color here */
+  }
+  
+  
+  .warning {
+	background-color: #FFCFCF;
+	color: #FF0000;
+  }
+  
+  td:nth-child(1) {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 0;
+  }
+  
+  td:nth-child(2),
+  td:nth-child(3) {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+  
+  tr:nth-child(even) {
+	background: #E0E0E0;
+  }
+
+  tr:hover {
+    background: silver;
+    cursor: pointer;
+}
+  
