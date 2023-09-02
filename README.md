@@ -1,47 +1,44 @@
-# Outlook Delivery Monitoring System
-
-The **Outlook Delivery Monitoring System** is a Python-based tool designed to track and monitor daily deliveries through Microsoft Outlook's Sent Items folder. This system is particularly useful for businesses and organizations that rely on email communication for critical deliveries and need to ensure the timely delivery of important information.
-
-## Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-- [Contributing](#contributing)
+# Delivery Monitoring with EricMon
 
 ## Overview
 
-Email communication is a fundamental part of modern business operations. Ensuring that important messages, reports, and notifications are delivered promptly is crucial. The **Outlook Delivery Monitoring System** automates the process of monitoring deliveries and provides insights into the status of each delivery. It accomplishes this by comparing sent emails with expected deliveries and categorizing them based on their status.
+This Python script, `delivery_check.py`, is designed for monitoring daily deliveries through the Outlook Sent Items folder. It retrieves delivery information from an EricMon database and matches it with emails in the Sent Items folder to track the status of deliveries. The script generates an HTML report and sends it via email to relevant stakeholders.
 
-## Key Features
+## Features
 
-- **Automated Monitoring:** The system automatically scans the Sent Items folder in Microsoft Outlook to identify sent emails.
+- Retrieve delivery information from an EricMon database.
+- Filter Sent Items in Outlook based on today's date.
+- Match email subjects with delivery records and track delivery status.
+- Generate an HTML report with a table displaying email subjects, times, expected times, statuses, and owners.
+- Highlight late deliveries and unsuccessful deliveries in the report.
+- Send the report via email using Outlook.
 
-- **Status Categorization:** It categorizes emails based on their delivery status, including "Success," "Late Delivery," "Pending Delivery," and "Delivery Unsuccessful."
+## Prerequisites
 
-- **Real-time Reporting:** Users receive real-time reports summarizing the delivery status of sent emails.
+Before using this script, ensure you have the following prerequisites:
 
-- **Customizable Alerts:** The system can be configured to send alerts or notifications when certain conditions are met, such as late deliveries or delivery failures.
+- Python 3.x installed on your system.
+- The `pywin32` library to work with Windows-specific features.
+- Access to an Outlook email account.
+- Access to an EricMon database.
+- Proper configuration of the Outlook email account and database credentials in the script.
 
-- **Email Owners:** It associates each email with its respective owner or sender, providing insights into responsible parties.
-
-## Installation
-
-To get started with the **Outlook Delivery Monitoring System**, follow these steps:
+## Usage
 
 1. Clone this repository to your local machine.
 
-2. Install the required dependencies using the following command:
+2. Install the required dependencies using pip:
 
 ```
 pip install -r requirements.txt
 ```
-
-## Run the project with:
+## Run the script:
 ```
 python delivery_check.py
 ```
-## Usage
-To extract and monitor deliveries from a specific time frame, the system uses the Sent Items folder in Microsoft Outlook. It compares the sent emails with a list of expected deliveries and categorizes them based on their delivery status.
+
+## CSS Styling
+The HTML report is styled using the EricMon.css file, which defines the appearance of the report's table, headers, and row colors. You can customize the styling by modifying this CSS file.
+
+## Conclusion
+The Delivery Monitoring with EricMon script simplifies the management of delivery tracking by automating the process of matching delivery records with sent emails. It ensures that stakeholders are informed of delivery statuses in real-time, enhancing efficiency and reducing manual tracking efforts.
