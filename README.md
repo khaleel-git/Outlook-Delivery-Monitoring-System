@@ -6,14 +6,21 @@
 
 This Python script, `delivery_check.py`, is designed for monitoring daily deliveries through the Outlook Sent Items folder. It retrieves delivery information from an EricMon database and matches it with emails in the Sent Items folder to track the status of deliveries. The script generates an HTML report and sends it via email to relevant stakeholders.
 
-## Features
+## Key Features:
+- <b>Automated Monitoring</b>: The system automatically tracks delivery emails in the Outlook Sent Items folder.
+- <b>Database Integration</b>: Desired emails to be monitored are stored in a database (SQL Server). The project connects to the database to retrieve delivery information.
+- <b>Real-time Status Updates</b>: It provides real-time status updates on deliveries, including successful deliveries, late deliveries, and pending deliveries.
+- <b>Customized Email Notifications</b>: The system generates detailed HTML email notifications with tables, highlighting critical delivery information.
+- <b>User-Friendly Interface</b>: The email notifications are user-friendly, making it easy for recipients to understand the delivery status.
+- <b>Customizable Styles</b>: The project includes a CSS file for customizing the appearance of email notifications.
 
-- Retrieve delivery information from an EricMon database.
-- Filter Sent Items in Outlook based on today's date.
-- Match email subjects with delivery records and track delivery status.
-- Generate an HTML report with a table displaying email subjects, times, expected times, statuses, and owners.
-- Highlight late deliveries and unsuccessful deliveries in the report.
-- Send the report via email using Outlook.
+## How It Works
+1. The desired emails that need to be monitored are stored in a SQL Server database (EricMon).
+2. The project connects to the database to retrieve delivery information, including expected delivery times and recipients.
+3. It automatically tracks delivery-related emails in the Outlook Sent Items folder.
+4. The system compares the received emails with the database records to determine the delivery status.
+5. It generates HTML email notifications with tables, providing a clear overview of delivery statuses.
+6. The notifications are sent via Outlook, ensuring timely communication with stakeholders.
 
 ## Prerequisites
 

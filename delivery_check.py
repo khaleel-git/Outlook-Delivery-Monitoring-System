@@ -58,7 +58,7 @@ def Send_Email(table_subjects, email_times, table_expected_times, email_status, 
 	outlook_obj = obj.CreateItem(0)
 	outlook_obj.SentOnBehalfOfName = 'Outlook-configured-email@outlook'
 	# outlook_obj.To = "khaleel Ahmad <khaleel.org@gmail.com>;"
-	outlook_obj.To = ""
+	outlook_obj.To = "add your email recipients"
 	outlook_obj.Subject = f"EricMon Delivery Monitoring | " + today.strftime('%d-%m-%Y')
 	outlook_obj.HTMLBody = HTMLBody
 	outlook_obj.Send()
