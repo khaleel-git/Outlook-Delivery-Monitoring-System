@@ -29,7 +29,7 @@ Before using this script, ensure you have the following prerequisites:
 - Python 3.x installed on your system.
 - The `pywin32` library to work with Windows-specific features.
 - Access to an Outlook email account.
-- Access to an EricMon database.
+- Make a database: "any-name" (in my case its EricMon), make a table: Meta_Delivery, then add your email entries into it.
 - Proper configuration of the Outlook email account and database credentials in the script.
 
 ## Usage
