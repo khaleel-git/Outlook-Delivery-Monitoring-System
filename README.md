@@ -41,7 +41,7 @@ Before using this script, ensure you have the following prerequisites:
 ```
 pip install -r requirements.txt
 ```
-## Create a table (also Add your desried entries)
+## Create a table (also Add your desired entries)
 ```
 USE [EricMon]
 GO
@@ -72,4 +72,4 @@ python delivery_check.py
 The HTML report is styled using the EricMon.css file, which defines the appearance of the report's table, headers, and row colors. You can customize the styling by modifying this CSS file.
 
 ## Conclusion
-The Delivery Monitoring with EricMon script simplifies the management of delivery tracking by automating the process of matching delivery records with sent emails. It ensures that stakeholders are informed of delivery statuses in real-time, enhancing efficiency and reducing manual tracking efforts.
+The Delivery Monitoring with EricMon script simplifies the management of delivery tracking by automating the process of matching delivery records with sent emails. It ensures that stakeholders are informed of delivery statuses in real time, enhancing efficiency and reducing manual tracking efforts.
